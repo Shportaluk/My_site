@@ -3,7 +3,7 @@
 	<title>Join and Do</title>
 	
 	<link type="text/css" rel="StyleSheet" href="styles/style.css" />
-	<link type="text/css" rel="StyleSheet" href="styles/style_my_messages.css" />
+	<link type="text/css" rel="StyleSheet" href="styles/style_my_profile.css" />
 	
 	<link rel="stylesheet" media="screen and (min-width:900px) and (max-width:1266px)" href="styles/adapt.css" />
 	<link rel="stylesheet" media="screen and (min-width:480px) and (max-width:899px)" href="styles/adapt_phone.css" />
@@ -13,18 +13,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
  
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src='scripts/sc_my_msg.js' language='javascript'></script>
+	<script src='scripts/sc_my_profile.js' language='javascript'></script>
 	
  </head>
 
- <body>
- 
+ <body> 
 <script>
-
 </script>
  
  <div id="header">
- <p id="header_text">Join and Do</p>
+ <a href="index.html" id="header_text">Join and Do</a>
  <input id="header_search_text" type="text">
  </div>
  
@@ -47,7 +45,43 @@
  </div>
  
  <div id="blocks">
-
+	<div id="information">
+		<img src="styles/images/profile.png" alt=" " />
+		<p id="full_name">Andriy Shportaluk</p>
+		<div id="Statistics">
+			<p>Fulfillment accession</p>
+			<div id="full_of_accession" >
+				<div id="completed_percentage_of_accessions" />
+			</div>
+			<div class="like_or_dislike">
+				<button class="like" id="like_1"/>
+				<button class="dislike" id="dislike_1" onclick="dislike(1)" />
+			</div>
+			
+			
+			<p>Accepted connections</p>
+			<div id="full_of_accession" >
+				
+				<div id="percentage_of_accepted_connections" />
+				
+			</div>
+			<div class="like_or_dislike">
+				<button class="like" id="like_2" onclick="like(2)"/>
+				<button class="dislike" id="dislike_2" onclick="dislike(2)" />
+			</div>
+			
+			
+			<p>Middle time working for project</p>
+			<div id="full_of_accession" >
+				<div id="percentage_of_time_working" />
+			</div>
+			<div class="like_or_dislike">
+				<button class="like" id="like_3" onclick="like(3)"/>
+				<button class="dislike" id="dislike_3" onclick="dislike(3)" />
+			</div>
+			
+		</div>
+	</div>
  </div>
  
  </body> 
