@@ -1,0 +1,58 @@
+.img_progress
+{
+	margin: auto;
+
+	position: relative;
+	top: 10px;
+}
+
+#fail
+{
+	width: 300px;
+	height: 175px;
+	top: 15px;
+	background: url( "images/Fail.png" ) 100% 100% no-repeat;
+	background-size: cover;
+
+}
+
+#fail:hover
+{
+	animation: fail 0.75s normal;
+}
+
+#done
+{
+	width: 48px;
+	height: 48px;
+	top: 5px;
+	background: url( "images/Tick.png" ) 100% 100% no-repeat;
+	background-size: cover;
+
+    animation: done 0.65s infinite;
+	Animation-direction: Normal;
+}
+
+#done:hover
+{
+	background: url( "images/tick_hover.png" ) 100% 100% no-repeat;
+	background-size: cover;
+    animation: done 0.95s infinite;
+}
+
+@keyframes done
+{
+  50%
+	{
+		transform: scaleX(0.8) scaleY(0.8);
+    }
+}
+
+@keyframes fail
+{
+	0% { transform: rotate(-10deg); }
+	5% { transform: rotate(5deg); }
+	10% { transform: rotate(-10deg); }
+	15% { transform: rotate(5deg); }
+	20% { transform: rotate(-10deg); }
+}
