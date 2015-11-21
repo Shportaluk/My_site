@@ -2,10 +2,10 @@ body
 {
  /*min-width:1280px;*/
  margin: 0px;
+ padding: 0px;
  background: url("images/background.jpg") 100% 100% no-repeat;
  background-size: cover;
  background-attachment: fixed;
- transition: 5s;
 }
 
 #header
@@ -119,6 +119,11 @@ body
  margin: auto;
  float: none;
  margin: 0 260px 0 260px;
+ 
+ 	animation-timing-function: linear;
+	transform: perspective(1000px) rotateY(180deg);
+	opacity: 0;
+	transition: 0.35s;
 }
 
 .block

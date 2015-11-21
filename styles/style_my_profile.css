@@ -1,3 +1,8 @@
+#blocks
+{
+	box-shadow: 0 0 5px black;
+}
+
 #information
 {
 	background-color: rgba(129, 247, 243, 0.3);
@@ -55,8 +60,10 @@
 }
 .like_or_dislike
 {
+	width: 65px;
+	padding: 4px;
 	position: relative;
-	top: -20px;
+	top: -23px;
 	left: 460px;
 }
 
