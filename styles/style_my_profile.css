@@ -82,33 +82,19 @@
 .like
 {
 	background: url( "images/like.png" ) 100% 100% no-repeat;
-	transition: 0.55s;
+	transition: 0.75s;
 }
 
 .dislike
 {
 	background: url( "images/dislike.png" ) 100% 100% no-repeat;
-	transition: 0.55s;
+	transition: 0.75s;
 }
 
 .like:focus, .dislike:focus
 {
-	transition: 0.15s;
+	transition: 0.75s;
 }
-
-/*.like:hover
-{
-	background: url( "images/like_.png" ) 100% 100% no-repeat;
-	transition: 0.15s;
-}
-
-.dislike:hover
-{
-	background: url( "images/dislike_.png" ) 100% 100% no-repeat;
-	transition: 0.15s;
-	
-}
-*/
 
 #completed_percentage_of_accessions,#percentage_of_accepted_connections, #percentage_of_time_working
 {
